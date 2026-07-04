@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download APK</title>
+    <style>
+        /* ── Reset & base ── */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0b1220;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .card {
+            max-width: 420px;
+            width: 100%;
+            background: #141e2b;
+            border-radius: 24px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+        }
+
+        /* ── Icon ── */
+        .icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #0056b3, #00a3ff);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #fff;
+            box-shadow: 0 8px 24px rgba(0, 86, 179, 0.35);
+        }
+
+        /* ── Text ── */
+        h1 {
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .sub {
+            color: #8899b0;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .version {
+            display: inline-block;
+            background: rgba(0, 86, 179, 0.2);
+            color: #66b3ff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+        }
+
+        .desc {
+            color: #b0c4d8;
+            font-size: 0.92rem;
+            line-height: 1.6;
+            margin-bottom: 28px;
+        }
+
+        /* ── Download button ── */
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 16px 24px;
+            background: linear-gradient(135deg, #0056b3, #0088e6);
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(0, 86, 179, 0.35);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 86, 179, 0.5);
+        }
+
+        .download-btn:active {
+            transform: scale(0.97);
+        }
+
+        .download-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+            flex-shrink: 0;
+        }
+
+        /* ── File info ── */
+        .file-info {
+            margin-top: 18px;
+            color: #5a6f84;
+            font-size: 0.8rem;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .file-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* ── Footer ── */
+        .footer {
+            margin-top: 24px;
+            color: #3a4a5a;
+            font-size: 0.7rem;
+            letter-spacing: 0.3px;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 480px) {
+            .card {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.3rem;
+            }
+            .icon {
+                width: 64px;
+                height: 64px;
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <!-- Icon -->
+        <div class="icon">📦</div>
+
+        <!-- Title -->
+        <h1>LasiyaIMG GEN</h1>
+        <div class="version">Version 1.0</div>
+
+        <p class="desc">
+            Download the latest APK to get started.<br />
+            Install and enjoy all features.
+        </p>
+
+        <!-- DOWNLOAD BUTTON -->
+        <a
+            class="download-btn"
+            href="https://github.com/nxt-owner/lasiyaIMG-GEN/releases/download/1.0/a.apk"
+            download
+        >
+            <svg viewBox="0 0 24 24">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
+                <path d="M12 15l-4-4h2.5V8h3v3H16l-4 4z"/>
+                <path d="M8 17h8v1.5H8V17z"/>
+            </svg>
+            Download APK
+        </a>
+
+        <!-- File info -->
+        <div class="file-info">
+            <span>📁 12.4 MB</span>
+            <span>📅 2026-07-03</span>
+        </div>
+
+        <div class="footer">Free • Open Source</div>
+    </div>
+
+</body>
+</html>
